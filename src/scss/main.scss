@@ -1,4 +1,5 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 @import "_variables";
 
@@ -8,4 +9,5 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
