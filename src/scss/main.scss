@@ -3,21 +3,54 @@
 
 @import "_variables";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: hotpink;
+  background: $bodyColor;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
-
+  padding: 16px;
 }
+
+.main{
+  width: 100%;
+  max-width: 736px;
+}
+
+.notepad__commands{
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 .notepad{
-
+  margin: 0px, 0px, 12px, 0px;
 }
 
-.btn-load{
+
+.notepad__text{
+  width: 100%;
+  min-height: 161px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #A1A4B1;
+  border: 1px solid #A1A4B1;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.notepad__btn-load{
   width: 65px;
   height: 40px;
   border: 1px solid #121232;
@@ -27,9 +60,11 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+  margin-right: 12px;
+  margin-top: 12px;
 }
 
-.btn-save{
+.notepad__btn-save{
   width: 64px;
   height: 40px;
   border: 1px solid #121232;
@@ -40,4 +75,6 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+  margin-left: 12px;
+  margin-top: 12px;
 }

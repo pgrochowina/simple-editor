@@ -1,9 +1,19 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+const notepad = document.querySelector(".notepad--js");
+const load = document.querySelector(".load--js");
+const save = document.querySelector(".save--js");
+const entry = localStorage.getItem("myMemo");
 
-/* place your code below */
+if (entry) {
+  notepad.value = localStorage.getItem("myMemo");
+}
 
-console.log('HELLO 🚀')
+
+save.addEventListener("click", () => {
+  localStorage.setItem("myMemo", notepad.value);
+});
+
+load.addEventListener("click", () => {
+  notepad.value = localStorage.getItem("myMemo");
+});
