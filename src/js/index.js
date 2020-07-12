@@ -12,8 +12,10 @@ if (entry) {
 
 save.addEventListener("click", () => {
   localStorage.setItem("myMemo", notepad.value);
+  //e.preventDefault(); //zapobiega odświeżaniu formularza, u mnie się to nie dzieje - nie wiem, dlaczego
 });
 
 load.addEventListener("click", () => {
   notepad.value = localStorage.getItem("myMemo");
+  //e.preventDefault(); //zapobiega odświeżaniu formularza, u mnie się to nie dzieje - nie wiem, dlaczego
 });
