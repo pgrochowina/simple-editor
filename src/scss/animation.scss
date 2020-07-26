@@ -1,3 +1,4 @@
+/*
 @keyframes slide-move {
   0% {
     transform: translate(0px);
@@ -7,5 +8,18 @@
   }
   100% {
     transform: translate(0px);
+  }
+}
+*/
+
+@keyframes slide-move {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 22px);
+  }
+  100% {
+    left: 0%;
   }
 }
