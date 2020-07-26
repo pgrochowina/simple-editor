@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @import "_variables";
+@import "animation";
 
 html {
   box-sizing: border-box;
@@ -26,6 +27,13 @@ body {
 .main {
   width: 100%;
   max-width: 736px;
+}
+
+.slider{
+  margin-bottom: 12px;
+  font-size: 20px;
+  display: inline-block;
+  animation: slide-move 3s linear infinite;
 }
 
 .notepad {

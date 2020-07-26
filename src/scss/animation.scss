@@ -1,0 +1,11 @@
+@keyframes slide-move {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
