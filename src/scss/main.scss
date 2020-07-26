@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @import "_variables";
 
@@ -19,33 +19,32 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 16px;
 }
 
-.main{
+.main {
   width: 100%;
   max-width: 736px;
 }
 
-
-.notepad{
+.notepad {
   margin: 0px, 0px, 12px, 0px;
-  &__commands{
+  &__commands {
     display: flex;
     justify-content: flex-end;
   }
-  &__text{
+  &__text {
     width: 100%;
     min-height: 161px;
     font-size: 14px;
     line-height: 24px;
-    color: #A1A4B1;
-    border: 1px solid #A1A4B1;
+    color: #a1a4b1;
+    border: 1px solid #a1a4b1;
     border-radius: 4px;
     padding: 16px;
   }
-  &__btn-load{
+  &__btn-load {
     width: 65px;
     height: 40px;
     border: 1px solid #121232;
@@ -57,8 +56,15 @@ body {
     line-height: 16px;
     margin-right: 12px;
     margin-top: 12px;
+    transition: all 1s linear;
+    transform-origin: center left;
+    &:hover {
+      transform: rotate(180deg);
+      color: hotpink;
+      border: 1px solid hotpink;
+    }
   }
-  &__btn-save{
+  &__btn-save {
     width: 64px;
     height: 40px;
     border: 1px solid #121232;
